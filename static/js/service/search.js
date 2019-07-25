@@ -79,6 +79,7 @@ var handleSearch = (function(){
 
     // 최근 검색어 전체 삭제
     function handleRemoveItemAll() {
+        console.log('11');
         var targetElement = document.querySelector('.search-recently-keyword ul');
         var speed = 370;
 
