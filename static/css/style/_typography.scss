@@ -1,0 +1,522 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-07-22 15:28:11
+ * @ Description: 타이포그라피 텍스트 & 그라디언트
+ */
+
+// 잘난체 class="yg-jalnan"
+@import url("https://static.goodchoice.kr/fonts/jalnan/font.css");
+
+// Gradient
+@mixin RG600 {
+    background: #f5455c;
+    background: -moz-linear-gradient(-45deg, #f5455c 0%, #ff7847 100%);
+    background: -webkit-linear-gradient(-45deg, #f5455c 0%,#ff7847 100%);
+    background: linear-gradient(135deg, #f5455c 0%,#ff7847 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5455c', endColorstr='#ff7847',GradientType=1 );
+}
+@mixin BG450 {
+    background: #5490eb;
+    background: -moz-linear-gradient(-45deg, #5490eb 0%, #6763e0 100%);
+    background: -webkit-linear-gradient(-45deg, #5490eb 0%,#6763e0 100%);
+    background: linear-gradient(135deg, #5490eb 0%,#6763e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5490eb', endColorstr='#6763e0',GradientType=1 );
+}
+
+/* Font Weight */
+$font-weight_xb: 900;
+$font-weight_b: 600;
+$font-weight_r: 400;
+
+/* 48pt display */
+@mixin font_brand_48 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+@mixin font_48_xb {
+    font-size: 48px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_48_b {
+    font-size: 48px;
+    font-weight: $font-weight_b;
+}
+
+/* 40px display */
+@mixin font_brand_40 {
+    font-size: 40px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_40_xb {
+    font-size: 40px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_40_b {
+    font-size: 40px;
+    font-weight: $font-weight_b;
+}
+
+/* 32px display */
+@mixin font_brand_32 {
+    font-size: 32px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_32_xb {
+    font-size: 32px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_32_b {
+    font-size: 32px;
+    font-weight: $font-weight_b;
+}
+
+/* 30px display */
+@mixin font_brand_30{
+    font-size: 30px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_30_xb {
+    font-size: 30px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_30_b {
+    font-size: 30px;
+    font-weight: $font-weight_b;
+}
+
+/* 28px display */
+@mixin font_brand_28{
+    font-size: 28px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_28_xb {
+    font-size: 28px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_28_b {
+    font-size: 28px;
+    font-weight: $font-weight_b;
+}
+
+
+/* 26px display */
+@mixin font_brand_26{
+    font-size: 26px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_26_xb {
+    font-size: 26px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_26_b {
+    font-size: 26px;
+    font-weight: $font-weight_b;
+}
+
+
+/* 24px display */
+@mixin font_brand_24 {
+    font-size: 24px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_24_xb {
+    font-size: 24px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_24_b {
+    font-size: 24px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_24_sb {
+    font-size: 24px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_24_m {
+    font-size: 24px;
+    font-weight: $font-weight_b;
+}
+
+
+/* 22px display */
+@mixin font_brand_22 {
+    font-size: 22px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_22_xb {
+    font-size: 22px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_22_b {
+    font-size: 22px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_22_sb {
+    font-size: 22px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_22_m {
+    font-size: 22px;
+    font-weight: $font-weight_b;
+}
+
+/* 20px display */
+@mixin font_brand_20 {
+    font-size: 20px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_20_xb {
+    font-size: 20px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_20_b {
+    font-size: 20px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_20_sb {
+    font-size: 20px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_20_m {
+    font-size: 20px;
+    font-weight: $font-weight_b;
+}
+
+/* 18px display */
+@mixin font_brand_18 {
+    font-size: 18px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_18_xb {
+    font-size: 18px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_18_b {
+    font-size: 18px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_18_sb {
+    font-size: 18px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_18_m {
+    font-size: 18px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_18_r {
+    font-size: 18px;
+    font-weight: $font-weight_r;
+}
+
+/* 17px display */
+@mixin font_17_xb {
+    font-size: 17px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_17_b {
+    font-size: 17px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_17_sb {
+    font-size: 17px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_17_m {
+    font-size: 17px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_17_r {
+    font-size: 17px;
+    font-weight: $font-weight_r;
+}
+
+/* 16px display */
+@mixin font_brand_16 {
+    font-size: 16px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_16_xb {
+    font-size: 16px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_16_b_leading {
+    font-size: 16px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_16_b{
+    font-size: 16px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_16_sb_leading {
+    font-size: 16px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_16_sb {
+    font-size: 16px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_16_m {
+    font-size: 16px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_16_r_leading {
+    font-size: 16px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_16_r {
+    font-size: 16px;
+    font-weight: $font-weight_r;
+}
+
+/* 15px display */
+@mixin font_15_xb {
+    font-size: 15px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_15_b_leading {
+    font-size: 15px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_15_b{
+    font-size: 15px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_15_sb {
+    font-size: 15px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_15_m_leading {
+    font-size: 15px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_15_m {
+    font-size: 15px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_15_r_leading {
+    font-size: 15px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_15_r {
+    font-size: 15px;
+    font-weight: $font-weight_r;
+}
+
+
+/* 14px display */
+@mixin font_brand_14 {
+    font-size: 14px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_14_b{
+    font-size: 14px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_14_sb {
+    font-size: 14px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_14_m_leading {
+    font-size: 14px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_14_m {
+    font-size: 14px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_14_r_leading {
+    font-size: 14px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_14_r {
+    font-size: 14px;
+    font-weight: $font-weight_r;
+}
+
+
+/* 13px display */
+@mixin font_13_b{
+    font-size: 13px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_13_sb {
+    font-size: 13px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_13_m_leading {
+    font-size: 13px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_13_m {
+    font-size: 13px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_13_r_leading {
+    font-size: 13px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_13_r {
+    font-size: 13px;
+    font-weight: $font-weight_r;
+}
+
+
+/* 12px display */
+@mixin font_brand_12{
+    font-size: 12px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_12_b{
+    font-size: 12px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_12_sb {
+    font-size: 12px;
+    font-weight: $font-weight_b;
+}
+
+
+@mixin font_12_m {
+    font-size: 12px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_12_r_leading {
+    font-size: 12px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_12_r {
+    font-size: 12px;
+    font-weight: $font-weight_r;
+}
+
+/* 11px display */
+@mixin font_brand_11{
+    font-size: 11px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_11_b{
+    font-size: 11px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_11_sb {
+    font-size: 11px;
+    font-weight: $font-weight_b;
+}
+
+
+@mixin font_11_m {
+    font-size: 11px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_11_r_leading {
+    font-size: 11px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_11_r {
+    font-size: 11px;
+    font-weight: $font-weight_r;
+}
+
+/* 10px display */
+@mixin font_brand_10{
+    font-size: 10px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_10_xb{
+    font-size: 10px;
+    font-weight: $font-weight_xb;
+}
+
+
+@mixin font_10_b{
+    font-size: 10px;
+    font-weight: $font-weight_xb;
+}
+
+@mixin font_10_sb {
+    font-size: 10px;
+    font-weight: $font-weight_b;
+}
+
+
+@mixin font_10_m {
+    font-size: 10px;
+    font-weight: $font-weight_b;
+}
+
+@mixin font_10_r_leading {
+    font-size: 10px;
+    font-weight: $font-weight_r;
+}
+
+@mixin font_10_r {
+    font-size: 10px;
+    font-weight: $font-weight_r;
+}

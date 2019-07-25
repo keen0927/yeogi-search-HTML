@@ -1,0 +1,55 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-07-16 15:15:12
+ * @ Description: mixin 관리
+ */
+
+@mixin gradient__top-to-bottom($top-color, $bottom-color) {
+    background: $top-color;
+    background: -moz-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $top-color), color-stop(100%, $bottom-color));
+    background: -webkit-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+    background: -o-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+    background: -ms-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+    background: linear-gradient(to bottom, $top-color 0%, $bottom-color 100%);
+}
+
+@mixin add-box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+    box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
+@mixin input-placeholder-color($color){
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: normal;
+    white-space: nowrap;
+}
+
+@mixin safe-area__top {
+    padding-top: 0;
+    padding-top: calc(constant(safe-area-inset-top));
+    padding-top: calc(env(safe-area-inset-top));
+}
+
+@mixin safe-area__bottom {
+    padding-bottom: 0;
+    padding-bottom: calc(constant(safe-area-inset-bottom));
+    padding-bottom: calc(env(safe-area-inset-bottom));
+}

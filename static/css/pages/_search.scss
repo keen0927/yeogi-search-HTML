@@ -1,0 +1,137 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-07-22 18:45:59
+ * @ Description: 검색 > 검색창
+ */
+
+$padding-bottom: 0px;
+
+.search-input {
+    overflow-x: hidden;
+    padding-top: 72px;
+    @include safe-area__bottom;
+
+    .search-input-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 50;
+    }
+}
+
+.search-keyword {
+    li {
+        a {
+            display: block;
+            position: relative;
+            height: 44px;
+            padding: 0 20px 0 50px;
+            line-height: 44px;
+            color: $text_dark_tertiary;
+            @include text-overflow;
+            @include font_16_m;
+
+            b {
+                color: $text_dark_primary;
+                @include font_16_b;
+            }
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 0;
+            font-size: 20px;
+            color: $ND32;
+        }
+
+    }
+}
+
+.search-recently-keyword {
+    margin-top: 12px;
+
+    h2 {
+        margin-bottom: 2px;
+        height: 24px;
+        padding: 0 20px;
+        color: $NTM72;
+        @include font_14_b;
+    }
+
+    li {
+        position: relative;
+        height: 44px;
+        padding: 2px 52px 2px 0;
+
+        a {
+            display: block;
+            height: 40px;
+            padding: 0 0 0 20px;
+            color: $text_dark_primary;
+            line-height: 40px;
+            @include font_16_b;
+        }
+
+        span {
+            display: inline-block;
+            padding-left: 6px;
+            color: $text_dark_tertiary;
+            @include font_16_m;
+        }
+
+        .dot-add:before {
+            content: ' · '
+        }
+
+        button {
+            position: absolute;
+            top: 2px;
+            right: 6px;
+            width: 40px;
+            height: 40px;
+            i {
+                font-size: 18px;
+                color: $ND32;
+            }
+            span {
+                position: absolute;
+                top: -9999px;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+.search-recently-keyword__bottom-button {
+    height: 68px;
+    padding: 16px;
+    text-align: right;
+
+    button {
+        height: 36px;
+        padding: 0 16px;
+        border-radius: 16px;
+        background: $action_n;
+        color: $text_dark_secondary;
+        @include font_14_sb;
+    }
+}
+
+.js-item__fadeout {
+    opacity: 0;
+    animation: item__fadeout .3s cubic-bezier(.51,.054,.685,.18);
+}
+
+@-webkit-keyframes item__fadeout {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@keyframes item__fadeout {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
