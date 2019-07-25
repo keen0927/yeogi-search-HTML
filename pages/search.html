@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name = "format-detection" content = "telephone=no"/>
+    <title>검색홈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/all.css">
+</head>
+<body>
+
+    <!-- 검색 입력창 레이어 -->
+    <div class="search-input">
+
+        <!-- 상단 검색 영역 -->
+        <div class="search-input-top">
+            <div class="input-element">
+                <i class="icon-icn_search"></i>
+                <input type="text" class="js-search-input" placeholder="여행지나 상품을 검색해보세요.">
+                
+            </div>
+            <button type="button" class="button-right">취소</button>
+        </div>
+        <!-- //상단 검색 영역 -->
+
+        <!-- 실시간 인기 검색어 모듈 -->
+        <div class="search-keyword">
+            <!-- 아이콘 클래스
+                : icon-icn_tag (태그)
+                : icon-icn_building (빌딩)
+                : icon-icn_parachute (열기구)
+            -->
+            <ul>
+                <li><a href="#"><i class="icon-icn_tag"></i><b>안면도</b> <span>숙소</span></a></li>
+                <li><a href="#"><i class="icon-icn_tag"></i><b>안면도</b> <span>액티비티</span></a></li>
+                <li><a href="#"><i class="icon-icn_building"></i><b>안면도</b> <span>코모도</span></a></li>
+                <li><a href="#"><i class="icon-icn_building"></i><b>안면도</b> <span>리빙</span></a></li>
+                <li><a href="#"><i class="icon-icn_building"></i><b>안면도</b> <span>마리나</span></a></li>
+                <li><a href="#"><i class="icon-icn_parachute"></i>태안 <b>안면도</b> <span>카트체험장 탑승권</span></a></li>
+                <li><a href="#"><i class="icon-icn_parachute"></i>태안 <b>안면도</b> <span>카트체험장 탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권탑승권</span></a></li>
+                <li><a href="#"><i class="icon-icn_parachute"></i>태안 <b>안면도</b> <span>카트체험장 탑승권</span></a></li>
+                <li><a href="#"><i class="icon-icn_parachute"></i>태안 <b>안면도</b> <span>카트체험장 탑승권</span></a></li>
+            </ul>
+
+            <!-- Empty 
+            <div class="empty-area">
+                <img src="" alt="">
+                <strong>현재 조건에 맞는 숙소가 없습니다.</strong>
+                <p>일정을 변경하거나 상세조건을 재설정 해보세요.</p>
+            </div>
+            //Empty -->
+        </div>
+        <!-- //실시간 인기 검색어 모듈 -->
+
+        <!-- 최근 검색어 -->
+        <div class="search-recently-keyword">
+            <h2>최근 검색어</h2>
+            <!-- "남해 · 숙소" 처럼 중간에 도트를 추가하려면 span태그에 클래스 dot-add를 추가 -->
+            <ul>
+                <li><a href="#"><b>남해</b><span class="dot-add">숙소</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>남해</b><span class="dot-add">숙소</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>남해</b><span class="dot-add">숙소</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>남해</b><span class="dot-add">숙소</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>남해</b><span class="dot-add">숙소</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>남해</b><span class="dot-add">숙소</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>신논현역</b><span>category</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>신논현역</b><span>category</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>신논현역</b><span>category</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>신논현역</b><span>category</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+                <li><a href="#"><b>신논현역</b><span>category</span></a><button type="button"><i class="icon-icn_cancel"></i><span>삭제</span></button></li>
+            </ul>
+            <p class="search-recently-keyword__bottom-button">
+                <button type="button" onclick="handleRemoveItemAll()">전체 삭제</button>
+            </p>
+        </div>
+        <!-- //최근 검색어 -->
+
+    </div>
+    <!-- //검색 입력창 레이어 -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="../static/js/service/search.js"></script>
+</body>
+</html>

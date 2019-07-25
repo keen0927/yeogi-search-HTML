@@ -1,0 +1,117 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-07-22 15:28:11
+ * @ Description: 리셋 CSS
+ */
+
+/**
+* YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+* http://cssreset.com
+* Copyright 2012 Yahoo! Inc. All rights reserved.
+* http://yuilibrary.com/license/
+*/
+html{
+    background:#FFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *,
+    *::before,
+    *::after {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary ,input,button
+{
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,
+img {
+    border:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style:normal;
+    font-weight:normal;
+}
+a {
+    text-decoration: none;
+}
+ol,
+ul {
+    list-style:none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,
+q:after {
+    content:'';
+}
+abbr,
+acronym {
+    border:0;
+    font-variant:normal;
+}
+sup {
+    vertical-align:text-top;
+}
+sub {
+    vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+}
+legend {
+    color:#000;
+}
+img {
+    display: block;
+}
+button {
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+body {
+    min-width: 320px;
+    text-size-adjust: none; // 텍스트 크기 자동조절 금지
+    user-select: none; // 텍스트 선택 금지
+    -webkit-overflow-scrolling: touch; // 웹킷 모멘컴 기반 스크롤 사용
+    -webkit-touch-callout: none; // 롱 클릭 금지
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0); // 클릭시 배경 효과 금지
+}
+select,
+input,
+button {
+    -webkit-appearance: none; // 디폴트 스타일 초기화
+    appearance: none;
+}
+input:focus {
+    // outline: 1px solid red;
+}

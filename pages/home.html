@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name = "format-detection" content = "telephone=no"/>
+    <title>검색홈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/all.css">
+</head>
+<body>
+
+    <!-- 검색홈 -->
+    <div class="search-home">
+
+        <!-- 검색 상단 영역 -->
+        <div class="search-home-top">
+            <h1>어디로 떠나볼까?</h1>
+            <div class="search-home-top__image"><img src="https://previews.123rf.com/images/gongzstudio/gongzstudio1508/gongzstudio150800089/44493133-%EB%B0%94%EB%8B%A4-%EB%B0%B0%EA%B2%BD%EC%9C%BC%EB%A1%9C-%EB%82%98%EB%AC%B4-%ED%85%8C%EC%9D%B4%EB%B8%94.jpg" alt=""></div>
+            <div class="search-home-top__input-wrap">
+                <div class="input-element">
+                    <i class="icon-icn_search"></i>
+                    <button type="button">여행지나 상품을 검색해보세요.</button>
+                </div>
+                <div class="input-element">
+                    <i class="icon-icn_calendar"></i>
+                    <button type="button">6.26 (수) - 6.27 (목), 1박</button>
+                </div>
+            </div>
+        </div>
+        <!-- //검색 상단 영역 -->
+
+        <!-- #1 숙소 인기 검색어 -->
+        <div class="search-home-keyword">
+            <h2>숙소 인기 검색어</h2>
+            <div class="swiper-container swiper-container__keyword js-yeogi-swiper">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide js-slide">
+                        <li><a href="#"><p><b>1</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>2</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>3</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>4</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>5</b>Keyword<span>HOT</span></p></a></li>
+                    </ul>
+                    <ul class="swiper-slide js-slide">
+                        <li><a href="#"><p><b>1</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>2</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>3</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>4</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>5</b>Keyword<span>HOT</span></p></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- // #1 숙소 인기 검색어 -->
+
+        <!-- 실시간 인기 검색어 #2 -->
+        <div class="search-home-keyword">
+            <h2>액티비티 인기 검색어</h2>
+            <div class="swiper-container swiper-container__keyword js-activity-swiper">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide js-slide">
+                        <li><a href="#"><p><b>1</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>2</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>3</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>4</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>5</b>Keyword<span>HOT</span></p></a></li>
+                    </ul>
+                    <ul class="swiper-slide js-slide">
+                        <li><a href="#"><p><b>1</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>2</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>3</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>4</b>Keyword<span>HOT</span></p></a></li>
+                        <li><a href="#"><p><b>5</b>Keyword<span>HOT</span></p></a></li>
+                    </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- //실시간 인기 검색어 #2 -->
+    </div>
+    <!-- //검색홈 -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="../static/js/service/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-07-22 15:28:11
+ * @ Description: 타이포그라피 컬러
+ */
+
+// Neutral Light
+$NL100: #ffffff;
+$NL98: rgba(255,255,255,0.98);
+$NL96: rgba(255,255,255,0.96);
+$NL88: rgba(255,255,255,0.88);
+$NL72: rgba(255,255,255,0.72);
+$NL48: rgba(255,255,255,0.48);
+$NL24: rgba(255,255,255,0.24);
+$NL8: rgba(255,255,255,0.08);
+$NL0: rgba(255,255,255,0);
+
+// Neutral Dark
+$ND100: rgba(0,0,0,0.88);
+$ND88: rgba(0,0,0,0.88);
+$ND80: rgba(0,0,0,0.80);
+$ND72: rgba(0,0,0,0.72);
+$ND64: rgba(0,0,0,0.64);
+$ND56: rgba(0,0,0,0.56);
+$ND48: rgba(0,0,0,0.48);
+$ND40: rgba(0,0,0,0.40);
+$ND32: rgba(0,0,0,0.32);
+$ND24: rgba(0,0,0,0.24);
+$ND16: rgba(0,0,0,0.16);
+$ND8: rgba(0,0,0,0.08);
+$ND4: rgba(0,0,0,0.04);
+$ND2: rgba(0,0,0,0.02);
+$ND0: rgba(0,0,0,0);
+
+// Neutral Dark Solid
+$NDS12: #1F1F1F;
+$NDS20: #333333;
+$NDS28: #474747;
+$NDS36: #5C5C5C;
+$NDS44: #707070;
+$NDS52: #858585;
+$NDS60: #999999;
+$NDS68: #ADADAD;
+$NDS76: #C2C2C2;
+$NDS84: #D6D6D6;
+$NDS92: #EBEBEB;
+$NDS96: #F5F5F5;
+$NDS98: #FAFAFA;
+
+// Neutral Tinted Midnight
+$NTM16:	#0B141F;
+$NTM24:	#162A3D;
+$NTM32:	#243B52;
+$NTM40:	#354E66;
+$NTM48:	#49627A;
+$NTM56:	#61788F;
+$NTM64:	#7C90A3;
+$NTM72:	#9AA9B8;
+$NTM80:	#BCC4CC;
+$NTM88:	#D7DCE0;
+$NTM98:	#F5F7FA;
+
+// Red
+$R600: #EB4242;
+$R500: #F45858;
+$R400: #FA736E;
+
+// Orange
+$O600: #FF7847;
+
+// Yellow
+$Y900: #FFAD0A;
+$Y200: #FFE999;
+$Y50: #FFF3C2;
+
+// Turquoise
+$T900: #06868F;
+$T700: #219AA3;
+
+// Cyan
+$C500: #5490EB;
+
+// Blue
+$B500: #5468EB;
+$B400: #6C83F5;
+
+// Purple
+$P400: #6763E0;
+$P300: #827AEB;
+
+// Scarlet
+$S600: #F5455C;
+
+// ETC
+$kakay_y: #FFDE00;
+$kakao_b: #3C1E1E;
+$facebook: #4267B2;
+$naver: #00C73C;
+$black: #8F7E51;
+
+// Backgrounds
+$bg_global_primary: $NL100;
+$bg_global_secondary: $NDS98;
+$bg_tinted: $NTM98;
+$bg_field: $NDS96;
+
+// Divider & Shadow
+$divider_dark_primary: $ND4;
+$divider_dark_secondary: $ND2;
+$divider_light_primary: $NL24;
+$shadow: $ND4;
+$shadow_dialog: $ND8;
+
+// Texts
+$text_dark_primary: $ND80;
+$text_dark_secondary: $ND56;
+$text_dark_tertiary: $ND48;
+$text_dark_hint: $ND24;
+
+$text_tint_primary: $NTM32;
+$text_tint_secondary: $NTM56;
+$text_tint_tertiary: $NTM64;
+
+$text_light_primary: $NL100;
+$text_light_secondary: $NL72;
+$text_light_hint: $NL48;
+
+// Control & Action
+$action_dark_primary: $ND80;
+$action_dark_secondary: $ND56;
+$action_dark_tertiary: $ND48;
+$action_disabled: $ND16;
+
+$action_light_primary: $NL100;
+$action_light_disabled: $NL48;
+
+$action_t: $T700;
+$action_r: $R500;
+$action_b: $B500;
+$action_n: $NDS92;
+$action_n_disabled: $NDS98;
+
+// ETC
+$bulletpoint: $NTM56;
+$bg_ad: $NTM16;
+
+
+/* font weight */
+$font_weight_brand : 400;
+$font-weight_xb : 900;
+$font-weight_b : 600;
