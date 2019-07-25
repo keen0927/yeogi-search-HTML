@@ -41,7 +41,7 @@
 
     .button-cancel {
         display: inline-block;
-        // display: none;
+        display: none;
         position: absolute;
         top: 50%;
         right: 4px;
@@ -49,6 +49,10 @@
         height: 40px;
         margin-top: -20px;
         text-align: center;
+
+        &.show {
+            display: block;
+        }
 
         i {
             left: 50%;

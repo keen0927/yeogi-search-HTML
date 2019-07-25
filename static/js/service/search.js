@@ -4,14 +4,21 @@ var handleSearch = (function(){
     function inputAddResetButton(element) {
         var buttonHTML = '<button type="button" class="button-cancel"><i class="icon-icn_cancel"></i><span>삭제</span></button>';
 
-        $(this).insertAfter(buttonHTML);
+        $(buttonHTML).insertAfter(element);
 
-        $('.js-search-input').on('focus keyup',function(){
+        if ($(element).val()) $('.button-cancel').show();
+
+        $(element).on('focus keyup',function(){
             if ($(this).val() === "") {
-                console.log('empty');
+                $('.button-cancel').hide();
             } else {
-                console.log($(this).val());
+                $('.button-cancel').show();
             }
+        });
+
+        $('.button-cancel').click(function(){
+            $(element).val('');
+            $(element).focus();
         });
     }
 
