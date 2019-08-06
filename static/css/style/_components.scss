@@ -18,6 +18,7 @@
         height: 30px;
         color: $text_dark_primary;
         border: 0;
+        background: transparent;
         @include font_15_m;
         @include input-placeholder-color($text_dark_hint);
     }
@@ -89,6 +90,7 @@
     // padding: 0 24px;
     text-align: center;
     img {
+        display: inline-block;
         width: 200px;
         height: 200px;
     }
