@@ -5,6 +5,8 @@
  */
 
 .search-home {
+    max-width: 768px;
+    margin: 0 auto;
     padding-bottom: 20px;
 
     .input-element {
@@ -28,18 +30,25 @@
             }
         }
     }
+}
 
+.search-home-top__background {
+    background-image: url('/static/css/test.jpg');
+    background-size: auto 210px;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
 }
 .search-home-top {
     overflow: hidden;
     position: relative;
-    padding-top: 40px;
+    padding-top: 78px;
+    height: 250px;
+    background: #F5F7FA;
 
     &:after {
         display: block;
         content: "";
         position: absolute;
-        z-index: 5;
         height: 42px;
         z-index: 10;
         right: 0;
@@ -50,13 +59,14 @@
 
     .search-home-top__image {
         position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
+        top: 12px;
+        right: 8px;
+        width: 180px;
+        height: 120px;
 
         img {
-            border: 1px solid #000;
-            width: 100%;
+            width: inherit;
+            height: inherit;
         }
     }
 
@@ -83,6 +93,7 @@
     }
 
     h2 {
+        margin-bottom: 10px;
         padding: 0 20px;
         height: 24px;
         line-height: 24px;
@@ -93,12 +104,13 @@
 
 .swiper-container__keyword {
     overflow: visible;
-    padding: 8px 20px;
+    padding: 0 20px;
 
     .swiper-wrapper {
         width: auto;
     }
     .swiper-slide {
+        padding: 8px 0;
         border-radius: 8px;
         background: $bg_tinted;
 
@@ -134,7 +146,7 @@
 
     .swiper-pagination {
         position: absolute;
-        top: -20px;
+        top: -32px;
         right: 22px;
         bottom: auto;
         left: auto;
