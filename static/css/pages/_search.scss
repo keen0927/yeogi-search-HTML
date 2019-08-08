@@ -10,19 +10,6 @@ $padding-bottom: 0px;
     overflow-x: hidden;
     padding-top: 72px;
     @include safe-area__bottom;
-
-    .search-input-top {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 50;
-
-        .input-element {
-            background: $bg_field;
-            box-shadow: none;
-        }
-    }
 }
 
 .search-keyword {
