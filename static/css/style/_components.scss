@@ -37,8 +37,18 @@
 }
 
 .search-input-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
     padding: 10px 61px 10px 16px;
     background: #fff;
+
+    .input-element {
+        background: $bg_field;
+        box-shadow: none;
+    }
 
     .button-cancel {
         display: inline-block;
