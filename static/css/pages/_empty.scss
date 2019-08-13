@@ -1,0 +1,53 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-08-13 
+ * @ Description: 검색 홈 > 에러페이지
+ */
+
+.search-home-empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 320px;
+    margin-top: -40px;
+    padding: 0 20px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    img {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+
+    strong {
+        display: block;
+        padding: 8px 0;
+        font-family: 'yg-jalnan';
+        color: $ND24;
+        @include font_brand_18;
+    }
+
+    p {
+        padding-bottom: 8px;
+        color: $ND32;
+        @include font_14_r_leading;
+    }
+
+    span {
+        display: block;
+        padding-bottom: 8px;
+        color: $ND32;
+        @include font_14_r_leading;
+    }
+
+    .btn-default {
+        display: inline-block;
+        padding: 0 24px;
+        height: 48px;
+        font-size: 14px;
+        line-height: 48px;
+        color: $T700;
+        vertical-align: top;
+    }
+}

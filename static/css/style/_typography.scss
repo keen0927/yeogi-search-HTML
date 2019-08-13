@@ -520,3 +520,19 @@ $font-weight_r: 400;
     font-size: 10px;
     font-weight: $font-weight_r;
 }
+
+@mixin font_action_primary {
+    @include font_18_xb;
+}
+
+@mixin font_action_secondary {
+    @include font_16_xb;
+}
+
+@mixin font_action_tertiary {
+    @include font_14_r;
+}
+
+@mixin font_action_brand {
+    @include font_16_r;
+}
