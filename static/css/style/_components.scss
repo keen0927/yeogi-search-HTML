@@ -43,6 +43,8 @@
     left: 0;
     z-index: 1000;
     padding: 10px 61px 10px 16px;
+    padding: safe(constant, bottom, 10px) 61px 10px 16px;
+    padding: safe(env, bottom, 10px) 61px 10px 16px;
     background: #fff;
 
     .input-element {
@@ -81,7 +83,7 @@
     .button-right {
         width: 49px;
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         right: 8px;
         height: 52px;
         text-align: center;

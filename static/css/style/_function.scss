@@ -1,0 +1,49 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-08-14 09:49:04
+ * @ Description: SASS FUNCTION
+ */
+
+// iOS 노치디자인 대응 sare-area-inset
+// version: env, constant
+// direction: top, right, bottom, left
+@function safe($version: env, $direction: all, $value: 1px) {
+
+    @if ($direction == all) {
+        @if ($value > 0) {
+            @return
+                calc(#{$value} + #{$version}(safe-area-inset-top))
+                calc(#{$value} + #{$version}(safe-area-inset-right))
+                calc(#{$value} + #{$version}(safe-area-inset-bottom))
+                calc(#{$value} + #{$version}(safe-area-inset-left));
+        }
+        @else if ($value < 0) {
+            @return
+                calc((#{-$value} + #{$version}(safe-area-inset-top)) * -1)
+                calc((#{-$value} + #{$version}(safe-area-inset-right)) * -1)
+                calc((#{-$value} + #{$version}(safe-area-inset-bottom)) * -1)
+                calc((#{-$value} + #{$version}(safe-area-inset-left)) * -1);
+        }
+        @else {
+            @return
+                #{$version}(safe-area-inset-top)
+                #{$version}(safe-area-inset-right)
+                #{$version}(safe-area-inset-bottom)
+                #{$version}(safe-area-inset-left);
+        }
+    }
+    @else {
+        @if ($value > 0) {
+            @return
+                calc(#{$value} + #{$version}(safe-area-inset-#{$direction}));
+        }
+        @else if ($value < 0) {
+            @return
+                calc((#{-$value} + #{$version}(safe-area-inset-#{$direction})) * -1);
+        }
+        @else {
+            @return
+                #{$version}(safe-area-inset-#{$direction});
+        }
+    }
+}
