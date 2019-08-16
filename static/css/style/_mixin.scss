@@ -35,6 +35,21 @@
     }
 }
 
+@mixin input-placeholder-weight($weight){
+    &::-webkit-input-placeholder {
+        font-weight: $weight;
+    }
+    &:-moz-placeholder {
+        font-weight: $weight;
+    }
+    &::-moz-placeholder {
+        font-weight: $weight;
+    }
+    &:-ms-input-placeholder {
+        font-weight: $weight;
+    }
+}
+
 @mixin text-overflow {
     overflow: hidden;
     text-overflow: ellipsis;
