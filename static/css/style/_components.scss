@@ -48,6 +48,8 @@
     left: 0;
     z-index: 1000;
     padding: 10px 61px 10px 16px;
+    padding: safe(constant, bottom, 10px) 61px 10px 16px;
+    padding: safe(env, bottom, 10px) 61px 10px 16px;
     background: #fff;
 
     .input-element {
