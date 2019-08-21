@@ -6,12 +6,17 @@ var handleSearch = (function(){
 
         $(buttonHTML).insertAfter(element);
 
-        if ($(element).val()) $('.button-cancel').show();
+        if ($(element).val()) {
+            $('.input-element').addClass('input-element__add-reset-button');
+            $('.button-cancel').show();
+        }
 
         $(element).on('focus keyup',function(){
             if ($(this).val() === "") {
+                $('.input-element').removeClass('input-element__add-reset-button');
                 $('.button-cancel').hide();
             } else {
+                $('.input-element').addClass('input-element__add-reset-button');
                 $('.button-cancel').show();
             }
         });

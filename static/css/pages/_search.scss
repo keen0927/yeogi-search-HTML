@@ -9,8 +9,6 @@ $padding-bottom: 0px;
 .search-input {
     overflow-x: hidden;
     padding: 72px 0 0 0;
-    padding: safe(constant, top, 72px) 0 safe(constant, bottom, 1px) 0;
-    padding: safe(env, top, 72px) 0 safe(env, bottom, 1px) 0;
 }
 
 .search-keyword {
