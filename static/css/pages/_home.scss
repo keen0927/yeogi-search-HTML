@@ -42,9 +42,6 @@
     overflow: hidden;
     position: relative;
     padding-top: 78px;
-    padding-top: safe(constant, top, 78px);
-    padding-top: safe(env, top, 78px);
-    // height: 250px;
     background: #F5F7FA;
 
     &:after {
@@ -62,8 +59,6 @@
     .search-home-top__image {
         position: absolute;
         top: 12px;
-        top: safe(constant, top, 12px);
-        top: safe(env, top, 12px);
         right: 8px;
         width: 180px;
         height: 120px;
