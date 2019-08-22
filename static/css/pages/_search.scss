@@ -23,7 +23,7 @@ $padding-bottom: 0px;
             padding: 0 20px 0 50px;
             line-height: 44px;
             color: $text_dark_tertiary;
-            @include text-overflow;
+            @include word-ellipsis-line1;
             @include font_16_r;
 
             b {
@@ -68,6 +68,7 @@ $padding-bottom: 0px;
             color: $text_dark_primary;
             line-height: 40px;
             @include font_16_b;
+            @include word-ellipsis-line1;
         }
 
         span {

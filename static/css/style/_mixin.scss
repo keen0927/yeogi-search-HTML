@@ -4,6 +4,23 @@
  * @ Description: mixin 관리
  */
 
+@mixin word-ellipsis-line1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: normal;
+    white-space: nowrap;
+}
+
+@mixin word-ellipsis-line2 {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+    box-orient: vertical;
+}
+
 @mixin gradient__top-to-bottom($top-color, $bottom-color) {
     background: $top-color;
     background: -moz-linear-gradient(top, $top-color 0%, $bottom-color 100%);
@@ -48,11 +65,4 @@
     &:-ms-input-placeholder {
         font-weight: $weight;
     }
-}
-
-@mixin text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: normal;
-    white-space: nowrap;
 }
