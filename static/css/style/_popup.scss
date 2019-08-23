@@ -1,0 +1,78 @@
+/**
+ * @ Author: Keen
+ * @ Create Time: 2019-08-23
+ * @ Description: 팝업 스타일
+ */
+
+.popup-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+    background: $ND56;
+    touch-action: none;
+    transition: opacity 0.4s;
+    opacity: 0;
+
+    &.show {
+        opacity: 1
+    }
+}
+
+.popup-default-content {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 16px;
+    border-radius: 12px;
+    background: $NL100;
+
+    .popup-text {
+        padding: 13px 20px 11px 20px;
+        line-height: 24px;
+        color: $ND80;
+        @include font_16_r;
+    }
+
+    .button-wrap {
+        padding: 16px 20px 20px;
+        height: 84px;
+    }
+
+    @mixin button-popup-default {
+        width: 100%;
+        height: 47px;
+        border: 0;
+        border-radius: 8px;
+        @include font_16_b;
+    }
+
+    .button-wrap__full {
+        button {
+            background-color: #ff5c5c;
+            color: $NL100;
+            @include button-popup-default;
+        }
+    }
+
+    .button-wrap__half {
+        display: flex;
+
+        button {
+            flex: 1;
+            background-color: #ff5c5c;
+            color: $NL100;
+            @include button-popup-default;
+        }
+
+        span {
+            display: inline-block;
+            width: 8px;
+        }
+    }
+}
