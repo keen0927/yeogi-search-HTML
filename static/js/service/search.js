@@ -48,13 +48,13 @@ var handleSearch = (function(){
         var targetElement = document.querySelector(element);
         var handleBlur = function() {
             targetElement.blur();
-            window.removeEventListener('touchstart',handleBlur);
+            document.removeEventListener('touchstart',handleBlur);
         }
 
         targetElement.addEventListener('focus',function(){
-
             setTimeout(function(){
-                window.addEventListener('touchstart',handleBlur);
+                document.addEventListener('touchstart',handleBlur);
+
             },300);
 
         });
