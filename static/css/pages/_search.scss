@@ -41,6 +41,12 @@ $padding-bottom: 0px;
             font-size: 20px;
             color: $ND32;
         }
+        span {
+            display: block;
+        }
+        label {
+            display: block;
+        }
 
     }
 }
@@ -76,6 +82,10 @@ $padding-bottom: 0px;
             padding-left: 6px;
             color: $text_dark_tertiary;
             @include font_16_r;
+        }
+
+        label {
+            display: block;
         }
 
         .dot-add:before {
