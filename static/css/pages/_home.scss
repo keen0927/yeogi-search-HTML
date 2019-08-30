@@ -134,12 +134,16 @@
 
             span {
                 display: inline-block;
-                font-family: 'yg-jalnan';
+                width: 23px;
+                height: 100%;
                 position: relative;
                 top: -2px;
                 padding-left: 4px;
-                color: $R500;
-                @include font_brand_10;
+                background-image: url('/static/images/img_text_hot.png');
+                background-repeat: no-repeat;
+                background-size: 23px auto;
+                background-position: center;
+                text-indent: -9999px;
             }
         }
     }
