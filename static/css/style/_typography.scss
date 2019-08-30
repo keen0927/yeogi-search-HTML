@@ -4,16 +4,6 @@
  * @ Description: 타이포그라피 텍스트 & 그라디언트
  */
 
-@font-face {
-    font-family: 'yg-jalnan';
-    src: url('/static/fonts/jalnan/yg-jalnan.eot');
-    src: url('/static/fonts/jalnan/yg-jalnan.eot?#iefix') format('embedded-opentype'),
-    url('/static/fonts/jalnan/yg-jalnan.woff') format('woff'),
-    url('/static/fonts/jalnan/yg-jalnan.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 // Gradient
 @mixin RG600 {
     background: #f5455c;
