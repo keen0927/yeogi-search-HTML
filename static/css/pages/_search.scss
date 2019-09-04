@@ -12,9 +12,10 @@ $padding-bottom: 0px;
     right: 0;
     left: 0;
     z-index: 1000;
-    padding: 10px 61px 10px 16px;
-    padding: safe(env, top, 12px) 61px 10px 16px;
-    padding: safe(constant, top, 22px) 61px 10px 16px;
+    padding: 30px 61px 10px 16px;
+    padding-top: safe(constant, top, 12px);
+    padding-top: safe(env, top, 12px);
+
     background: #fff;
 
     .input-element {
@@ -64,9 +65,10 @@ $padding-bottom: 0px;
 
 .search-input {
     overflow-x: hidden;
-    padding: 72px 0 0 0;
+    padding: 102px 0 0 0;
+    padding: safe(constant, top, 72px) 0 safe(constant, bottom, 1px) 0;
     padding: safe(env, top, 72px) 0 safe(env, bottom, 1px) 0;
-    padding: safe(constant, top, 82px) 0 safe(constant, bottom, 1px) 0;
+
 
 }
 
