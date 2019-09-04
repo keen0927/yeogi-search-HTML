@@ -121,9 +121,14 @@
             display: block;
             height: 48px;
             padding: 0 20px;
-            line-height: 48px;
             color: $text_dark_primary;
             @include font_16_r;
+
+            p {
+                display: flex;
+                height: 48px;
+                align-items: center;
+            }
 
             b {
                 display: inline-block;
@@ -133,16 +138,13 @@
             }
 
             span {
-                display: inline-block;
                 width: 23px;
                 height: 100%;
-                position: relative;
-                top: -2px;
-                padding-left: 4px;
+                margin-left: 4px;
                 background-image: url('/static/images/img_text_hot.png');
                 background-repeat: no-repeat;
                 background-size: 23px auto;
-                background-position: center;
+                background-position: 0 calc(50% - 1px);
                 text-indent: -9999px;
             }
         }
