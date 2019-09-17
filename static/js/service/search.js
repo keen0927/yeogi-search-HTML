@@ -22,6 +22,7 @@ var handleSearch = (function(){
         });
 
         $('.button-cancel').click(function(){
+            windowScrollTop();
             $(element).val('');
             $(element).focus();
         });
@@ -33,8 +34,14 @@ var handleSearch = (function(){
     // 진입 후 input 포커스
     function inputFocus(element) {
         setTimeout(function(){
+            windowScrollTop();
             $(element).focus();
         },400);
+    }
+
+    // 스크롤 최상단으로 초기화
+    function windowScrollTop() {
+        window.scrollTo(0,0);
     }
 
     inputFocus('.js-search-input');
